@@ -1,9 +1,10 @@
+import Accordion from "./components/Accordion"
+
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-blue-100">
-      <h1 className="text-3xl font-bold text-blue-600 underline">
-        Hello Tailwind v4!
-      </h1>
+    <div >
+        <Accordion/>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque facere sunt, natus a, fugiat distinctio blanditiis iusto eligendi dolores vero odit dolorum! Commodi, debitis accusamus id dicta et maxime, quis inventore tempore aliquid magni, dignissimos delectus ratione facere repellendus! Ipsam similique ullam et suscipit! Minima mollitia doloremque dolores nisi quibusdam reiciendis unde illo atque alias voluptate accusantium ipsam, quasi vitae libero, laborum, minus exercitationem eligendi eius dolorem. Pariatur aut nesciunt natus laboriosam praesentium aspernatur, iste deserunt quas eum animi error cum recusandae, doloribus nisi perferendis repellat harum accusamus vel, neque numquam distinctio. Beatae accusamus id laudantium fugit unde iure ullam.</p>
     </div>
   )
 }
