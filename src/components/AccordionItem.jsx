@@ -1,9 +1,16 @@
 import React from 'react'
 
-const AccordionItem = () => {
+const AccordionItem = ({title,body}) => {
   return (
     <div>
-      AccordionItem
+        <div className='font-bold p-2'>
+
+      {title}
+        </div>
+        <div className='p-2'>
+
+      {body}
+        </div>
     </div>
   )
 }

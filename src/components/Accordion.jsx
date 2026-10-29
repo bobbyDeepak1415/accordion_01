@@ -17,7 +17,7 @@ const data=[
 const Accordion = () => {
   return (
     <div>
-      <AccordionItem/>
+      <AccordionItem title={data[0].title} body={data[0].body}/>
     </div>
   )
 }
