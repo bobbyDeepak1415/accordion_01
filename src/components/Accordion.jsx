@@ -16,7 +16,7 @@ const data=[
 
 const Accordion = () => {
   return (
-    <div>
+    <div className='w-[50%] m-auto mt-5'>
       <AccordionItem title={data[0].title} body={data[0].body}/>
     </div>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 const AccordionItem = ({title,body}) => {
   return (
     <div>
-        <div className='font-bold p-2'>
+        <div className='font-bold p-2 bg-slate-300'>
 
       {title}
         </div>
