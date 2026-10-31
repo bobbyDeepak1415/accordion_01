@@ -17,9 +17,10 @@ const data=[
 const Accordion = () => {
 
   return (
-    <>
-    Hello
-    </>
+    <div className='p-2 m-auto w-[50%]'>
+      <AccordionItem title={data[0].title} body={data[0].body}/>
+    
+    </div>
   )
 }
 
