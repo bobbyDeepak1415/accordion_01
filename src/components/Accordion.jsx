@@ -16,10 +16,11 @@ const data=[
 
 const Accordion = () => {
   return (
-    <div className='w-[50%] m-auto mt-5 border border-black'>
-      <AccordionItem title={data[0].title} body={data[0].body}/>
+    <div className='w-[50%] m-auto mt-5'>
+      {data.map((item,index)=>(<AccordionItem title={item.title} key={index} body={item.body}/>))}
     </div>
   )
 }
 
 export default Accordion
+ 
