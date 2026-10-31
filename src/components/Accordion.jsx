@@ -22,7 +22,9 @@ const Accordion = () => {
     <div className='p-2 m-auto w-[50%] mt-2'>
       {data.map((item,index)=>(
 
-      <AccordionItem isOpen={true} setIsOpen={()=>{}} key={index} title={item.title} body={item.body}/>
+      <AccordionItem isOpen={openIndex===index} setIsOpen={()=>{
+        setOnepIndex(index)
+      }} key={index} title={item.title} body={item.body}/>
       ))}
     
     </div>
