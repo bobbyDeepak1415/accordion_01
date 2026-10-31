@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 
 const AccordionItem = ({title,body}) => {
 
-  const [isOpen,setIsOpen]=useState(false)
+  const [isOpen,setIsOpen]=useState(true)
   return (
     <div>
-        <div className='font-bold p-2 bg-slate-300 flex justify-between' >
+        <div className='font-bold p-2 bg-slate-300 flex justify-between cursor-pointer' onClick={()=>setIsOpen(prev=>!prev)} >
 <span>
 
       {title}
@@ -16,8 +16,9 @@ const AccordionItem = ({title,body}) => {
 </span>
         </div>
         <div className='p-2'>
+          
 
-      {body}
+      {isOpen && body}
         </div>
     </div>
   )
