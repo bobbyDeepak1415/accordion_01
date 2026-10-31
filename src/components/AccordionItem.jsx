@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AccordionItem = ({title,body}) => {
+
+  const [isOpen,setIsOpen]=useState(false)
   return (
     <div>
         <div className='font-bold p-2 bg-slate-300 flex justify-between' >
@@ -9,6 +11,7 @@ const AccordionItem = ({title,body}) => {
       {title}
 </span>
 <span>
+  
   ⬇️
 </span>
         </div>
