@@ -16,9 +16,14 @@ const data=[
 
 const Accordion = () => {
 
+  const [openIndex,setOnepIndex]=useState(0)
+
   return (
-    <div className='p-2 m-auto w-[50%]'>
-      <AccordionItem title={data[0].title} body={data[0].body}/>
+    <div className='p-2 m-auto w-[50%] mt-2'>
+      {data.map((item,index)=>(
+
+      <AccordionItem isOpen={true} setIsOpen={()=>{}} key={index} title={item.title} body={item.body}/>
+      ))}
     
     </div>
   )

@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const AccordionItem = ({title,body}) => {
+const AccordionItem = ({title,body,isOpen,setIsOpen}) => {
+
+
   return (
-    <div className='border border-black rounded-lg mt-2'>
-      <div className='bg-slate-300 p-2 font-bold flex justify-between'>
+    <div className='border border-black rounded-lg'>
+      <div className='bg-slate-300 p-2 font-bold flex justify-between' onClick={()=>setIsOpen(prev=>!prev)}>
         <span>
 
         {title} 
@@ -12,7 +14,13 @@ const AccordionItem = ({title,body}) => {
           ⬇️
         </span>
         </div>
-      <div className='p-2'>{body}</div>
+{isOpen &&   <div className='p-2'>{body}</div>
+    }
+
+      
+      
+    
+    
     </div>
   )
 }
