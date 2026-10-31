@@ -34,3 +34,13 @@ const Accordion = () => {
 
 export default Accordion
   
+
+// next round if asked i will say i am good at claude opus 5.5. i want you to predict what  might be asked about these. take wat my friend said as a reference if needed. something like this "etting up custom skills/instructions in AI tools settings.
+
+// MCP (Model Context Protocol) to connect external data sources/APIs directly to the AI model.
+
+// Setting constraints so AI agents don't make unauthorized/destructive codebase changes.
+
+// Best practices for developer workflows: close monitoring/code review, questioning agent decisions before committing, maintaining single threads for context retention/token savings, and understanding the distinction between Models (Sonnet, Opus, etc.) vs. Agents."
+
+// remember it is not a deal breaker because it is not an AI engineer role. the recruiter themselves has said that just familiarize yourself and talk about it. explain the topics like defining skills in settings, mcp connection to other website to fetch data,defining constraints etc
