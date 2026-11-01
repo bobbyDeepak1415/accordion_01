@@ -1,30 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-const AccordionItem = ({title,body,isOpen,setIsOpen}) => {
-
-
+const AccordionItem = ({title,body}) => {
   return (
-    <div className='border border-black rounded-lg'>
-      <div className='bg-slate-300 p-2 font-bold flex justify-between' onClick={()=>setIsOpen(prev=>!prev)}>
-        <span>
+    <div className='border border-black'>
+      <div className='bg-slate-300 p-2 font-bold text-xl cursor-pointer'>
 
-        {title} 
-        </span>
-        <span>
-          ⬇️
-        </span>
-        </div>
-{isOpen &&   <div className='p-2'>{body}</div>
-    }
+      {title}
+      </div>
+      <div className='p-2'>
 
-      
-      
-    
-    
+      {body}
+      </div>
     </div>
   )
 }
 
 export default AccordionItem
 
-....

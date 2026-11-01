@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import AccordionItem from './AccordionItem'
+import AccordionItem from "./AccordionItem"
 
 
 const data=[
@@ -16,20 +15,14 @@ const data=[
 
 const Accordion = () => {
 
-  const [openIndex,setOnepIndex]=useState(0)
-
   return (
-    <div className='p-2 m-auto w-[50%] mt-2'>
-      {data.map((item,index)=>(
+    <div className="m-auto mt-2 w-[50%]">
+      
+      <AccordionItem title={data[0].title} body={data[0].body}/>
 
-      <AccordionItem isOpen={openIndex===index} setIsOpen={()=>{
-        openIndex===index ? setOnepIndex(null) :
-        setOnepIndex(index)
-      }} key={index} title={item.title} body={item.body}/>
-      ))}
-    
     </div>
   )
+  
 }
 
 export default Accordion
