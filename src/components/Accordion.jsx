@@ -1,3 +1,4 @@
+import { useState } from "react"
 import AccordionItem from "./AccordionItem"
 
 
@@ -15,10 +16,19 @@ const data=[
 
 const Accordion = () => {
 
+  const [openIndex,setOpenIndex]=useState(0)
+
   return (
     <div className="m-auto mt-2 w-[50%]">
+
+      {data.map((item,index)=>(
+
+
+      <AccordionItem key={index} isOpen={true} setIsOpen={()=>{
+        
+      }} title={item.title} body={item.body}/>
+      ))}
       
-      <AccordionItem title={data[0].title} body={data[0].body}/>
 
     </div>
   )
