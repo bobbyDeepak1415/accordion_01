@@ -24,9 +24,10 @@ const Accordion = () => {
       {data.map((item,index)=>(
 
 
-      <AccordionItem key={index} isOpen={true} setIsOpen={()=>{
-        
-      }} title={item.title} body={item.body}/>
+      <AccordionItem key={index} setIsOpen={()=>{
+        openIndex===index ? setOpenIndex(null) :
+        setOpenIndex(index)
+      }} isOpen={openIndex===index} title={item.title} body={item.body}/>
       ))}
       
 
