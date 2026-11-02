@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-const AccordionItem = ({title,body}) => {
+const AccordionItem = ({title,body,isOpen,setIsOpen}) => {
 
-  const [isOpen,setIsOpen]=useState(true)
+  // const [isOpen,setIsOpen]=useState(true)
 
   return (
     <div className='m-auto border border-black'>
