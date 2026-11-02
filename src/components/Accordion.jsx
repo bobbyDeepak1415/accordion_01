@@ -14,28 +14,17 @@ const data=[
     },
 ]
 
+import React from 'react'
+
 const Accordion = () => {
-
-  const [openIndex,setOpenIndex]=useState(0)
-
   return (
-    <div className="m-auto mt-2 w-[50%]">
-
-      {data.map((item,index)=>(
+    <div className="m-auto">
 
 
-      <AccordionItem key={index} setIsOpen={()=>{
-        openIndex===index ? setOpenIndex(null) :
-        setOpenIndex(index)
-      }} isOpen={openIndex===index} title={item.title} body={item.body}/>
-      ))}
-      
-
+      <AccordionItem title={data[0].title} body={data[0].body}/>
     </div>
   )
-  
 }
 
 export default Accordion
   
-.....
