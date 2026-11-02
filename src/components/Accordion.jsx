@@ -18,10 +18,12 @@ import React from 'react'
 
 const Accordion = () => {
   return (
-    <div className="m-auto">
+    <div className="w-[50%] m-auto mt-2">
 
-
-      <AccordionItem title={data[0].title} body={data[0].body}/>
+{data.map((item,index)=>(
+  
+  <AccordionItem title={item.title} key={index} body={item.body}/>
+))}
     </div>
   )
 }
