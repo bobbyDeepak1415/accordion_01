@@ -6,12 +6,12 @@ const data=[
     {title:"Accordion item #1",
         body:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus rem quasi in nesciunt soluta beatae, corrupti quaerat amet architecto omnis non ratione, ea provident? Nihil deserunt dolore obcaecati, quam omnis officia repellat sequi temporibus natus ratione vero vel suscipit fugit molestias culpa? Molestiae velit natus, neque beatae deleniti libero adipisci!"
     },
-    // {title:"Accordion item #2",
-    //     body:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus rem quasi in nesciunt soluta beatae, corrupti quaerat amet architecto omnis non ratione, ea provident? Nihil deserunt dolore obcaecati, quam omnis officia repellat sequi temporibus natus ratione vero vel suscipit fugit molestias culpa? Molestiae velit natus, neque beatae deleniti libero adipisci!"
-    // },
-    // {title:"Accordion item #3",
-    //     body:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus rem quasi in nesciunt soluta beatae, corrupti quaerat amet architecto omnis non ratione, ea provident? Nihil deserunt dolore obcaecati, quam omnis officia repellat sequi temporibus natus ratione vero vel suscipit fugit molestias culpa? Molestiae velit natus, neque beatae deleniti libero adipisci!"
-    // },
+    {title:"Accordion item #2",
+        body:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus rem quasi in nesciunt soluta beatae, corrupti quaerat amet architecto omnis non ratione, ea provident? Nihil deserunt dolore obcaecati, quam omnis officia repellat sequi temporibus natus ratione vero vel suscipit fugit molestias culpa? Molestiae velit natus, neque beatae deleniti libero adipisci!"
+    },
+    {title:"Accordion item #3",
+        body:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus rem quasi in nesciunt soluta beatae, corrupti quaerat amet architecto omnis non ratione, ea provident? Nihil deserunt dolore obcaecati, quam omnis officia repellat sequi temporibus natus ratione vero vel suscipit fugit molestias culpa? Molestiae velit natus, neque beatae deleniti libero adipisci!"
+    },
 ]
 
 
@@ -25,11 +25,13 @@ const Accordion = () => {
     <div className="w-[50%] m-auto mt-2">
 
 {data.map((item,index)=>(
-  <h2 className="border-2">Hello</h2>
-  // <AccordionItem isOpen={index===openIndex} setIsOpen={()=>{
-  //   index===openIndex ? setOpenIndex(null) :
-  //   setOpenIndex(index)
-  // }} title={item.title} key={index} body={item.body}/>
+  
+
+  <AccordionItem isOpen={index===openIndex} setIsOpen={()=>{
+    index===openIndex ? setOpenIndex(null) :
+    setOpenIndex(index)
+  }} title={item.title} key={index} body={item.body}/>
+  
 ))}
     </div>
   )
