@@ -28,4 +28,3 @@ const AccordionItem = ({title,body,isOpen,setIsOpen}) => {
 }
 
 export default AccordionItem
-...

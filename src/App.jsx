@@ -1,9 +1,9 @@
-import Accordion from "./components/Accordion"
+import Accordion1 from "./components/Accordion1"
 
 function App() {
   return (
     <div >
-        <Accordion/>
+        <Accordion1/>
     </div>
   )
 }
