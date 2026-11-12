@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-const AccordionItem1 = ({title,body,activeIndex,setActiveIndex,index}) => {
+const AccordionItem1 = ({title,body, isOpen,setIsOpen,activeIndex,setActiveIndex,index}) => {
 
-  const [isOpen,setIsOpen]=useState(true)
+  // const [isOpen,setIsOpen]=useState(true)
 
   return (
     <div className='border border-black'>
-      <div onClick={()=>setIsOpen(false)}  className='p-2 bg-blue-300 flex justify-between'>
+      <div onClick={()=>setIsOpen(prev=>!prev)}  className='p-2 bg-blue-300 flex justify-between'>
         <span>
 
         {title}
