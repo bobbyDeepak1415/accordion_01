@@ -1,4 +1,5 @@
 import React from 'react'
+import AccordionItem1 from './AccordionItem1'
 
 
 const data=[
@@ -10,8 +11,11 @@ const data=[
 
 const Accordion1 = () => {
   return (
-    <div>
-      Hello
+    <div className='border border-black w-[50%] m-auto mt-2'>
+
+      {data.map((item)=>(
+        <AccordionItem1 title={item.title} body={item.body}/>
+      ))}
     </div>
   )
 }
