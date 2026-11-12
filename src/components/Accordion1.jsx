@@ -11,12 +11,14 @@ const data=[
 
 const Accordion1 = () => {
 
-  const [openIndex,setOpenIndex]=useState(1)
+  const [openIndex,setOpenIndex]=useState(0)
 
   return (
     <div className='border w-[50vw] m-auto mt-2'>
       {data.map((item,index)=>(
-        <AccordionItem1 title={item.title} isOpen={index===openIndex} body={item.body} key={index}/>
+        <AccordionItem1 title={item.title} setIsOpen={()=>{
+          openIndex===index ? setOpenIndex(null) :
+          setOpenIndex(index)}} isOpen={index===openIndex} body={item.body} key={index}/>
       ))}
     </div>
   )
