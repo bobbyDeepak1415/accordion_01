@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AccordionItem1 = () => {
+const AccordionItem1 = ({title,body}) => {
   return (
     <div>
       hello
@@ -9,3 +9,6 @@ const AccordionItem1 = () => {
 }
 
 export default AccordionItem1
+
+
+
