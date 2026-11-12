@@ -11,7 +11,7 @@ const data=[
 
 const Accordion1 = () => {
   return (
-    <div className='border border-black w-[50%] m-auto mt-2'>
+    <div className='border border-black w-[50%] m-auto mt-3'>
 
       {data.map((item)=>(
         <AccordionItem1 title={item.title} body={item.body}/>
