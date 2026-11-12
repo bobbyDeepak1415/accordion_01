@@ -17,7 +17,12 @@ const Accordion1 = () => {
     <div className='border border-black w-[50%] m-auto mt-3'>
 
       {data.map((item,index)=>(
-        <AccordionItem1 isOpen={index===activeIndex} setIsOpen={()=>setActiveIndex(index)} title={item.title} body={item.body}/>
+        <AccordionItem1 isOpen={index===activeIndex} setIsOpen={()=>
+        {
+index===activeIndex ? setActiveIndex(null) :
+          setActiveIndex(index)
+        }
+        } title={item.title} body={item.body}/>
       ))}
     </div>
   )
