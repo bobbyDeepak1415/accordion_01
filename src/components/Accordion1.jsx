@@ -13,6 +13,7 @@ const Accordion1 = () => {
 
     const [activeIndex,setActiveIndex]=useState(0)
 
+
   return (
     <div className='w-[50%] m-auto mt-2 '>
 
