@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const AccordionItem1 = ({title,body}) => {
+
+  const [isOpen,setIsOpen]=useState(false)
+
   return (
     <div>
-      hello
+      <div onClick={()=>setIsOpen(prev=>!prev)} className='p-2 border bg-blue-300 flex justify-between'>
+        <span>{title}</span>
+        <span>⬇️</span>
+      </div>
+
+      {isOpen && (
+
+      <div className='bg-slate-300 p-2'>
+        {body}
+      </div>
+      )}
     </div>
   )
 }
