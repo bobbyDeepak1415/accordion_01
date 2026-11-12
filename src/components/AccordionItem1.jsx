@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-const AccordionItem1 = ({title,body}) => {
+const AccordionItem1 = ({title,body,isOpen,setIsOpen}) => {
 
-  const [isOpen,setIsOpen]=useState(false)
+  // const [isOpen,setIsOpen]=useState(false)
 
   return (
     <div>

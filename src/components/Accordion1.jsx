@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AccordionItem1 from './AccordionItem1'
 
 
@@ -10,10 +10,13 @@ const data=[
 
 
 const Accordion1 = () => {
+
+  const [openIndex,setOpenIndex]=useState(1)
+
   return (
     <div className='border w-[50vw] m-auto mt-2'>
       {data.map((item,index)=>(
-        <AccordionItem1 title={item.title} body={item.body} key={index}/>
+        <AccordionItem1 title={item.title} isOpen={index===openIndex} body={item.body} key={index}/>
       ))}
     </div>
   )
