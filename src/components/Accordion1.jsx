@@ -16,9 +16,7 @@ const Accordion1 = () => {
   return (
     <div className='border w-[50vw] m-auto mt-2'>
       {data.map((item,index)=>(
-        <AccordionItem1 title={item.title} setIsOpen={()=>{
-          openIndex===index ? setOpenIndex(null) :
-          setOpenIndex(index)}} isOpen={index===openIndex} body={item.body} key={index}/>
+        <AccordionItem1 title={item.title} body={item.body} key={index}/>
       ))}
     </div>
   )
